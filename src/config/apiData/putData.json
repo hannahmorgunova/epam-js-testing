@@ -1,0 +1,13 @@
+{
+    "data": {
+      "name": "Eric Bauch",
+      "username": "eric123",
+      "address": {
+        "city": "London",
+        "geo": {
+          "lat": -32.0245
+        }
+      }
+    }
+  }
+  

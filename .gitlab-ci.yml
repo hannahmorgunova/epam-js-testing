@@ -1,0 +1,47 @@
+image: ghcr.io/puppeteer/puppeteer:latest
+
+stages:
+  - test
+
+variables:   
+  BROWSER:       
+    value: "chrome"       
+    options:         
+      - "chrome"         
+      - "firefox"       
+    description: "Choose browser to run tests. Change this variable to 'firefox' if needed."
+
+before_script:  
+  - npm ci 
+
+test-unit:
+  stage: test
+  script:
+    - echo Run unit tests
+    - npm run unit_test
+  artifacts:
+    when: always
+    paths:
+      - mochawesome-report 
+
+test-ui:
+  stage: test
+  script:
+    - echo Run UI tests
+    - echo Browser - $BROWSER
+    - npm run cucumber_test
+  artifacts:   
+    when: always
+    paths:
+      - artifacts/screenshots/   
+      - junit-report    
+
+test-api:
+  stage: test
+  script:
+    - echo Run API tests   
+    - npm run api_test
+  artifacts:
+    when: always
+    paths:
+      - mochawesome-report 

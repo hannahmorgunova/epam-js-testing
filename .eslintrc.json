@@ -1,0 +1,35 @@
+{
+    "globals": {
+        "$": true,
+        "$$": true,
+        "browser": true,
+        "expect": true,
+        "it": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "describe": true
+    },
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "class-methods-use-this": "off",
+        "arrow-parens": "off",
+        "prefer-arrow-callback": "off",
+        "func-names": "off",
+        "object-curly-newline": "off",
+        "no-console": "off",
+        "import/no-extraneous-dependencies": [
+            "error", 
+            {
+                "devDependencies": true
+            }
+        ]
+    }
+}

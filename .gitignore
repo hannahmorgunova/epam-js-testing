@@ -1,0 +1,9 @@
+.vscode
+allure-report
+allure-results
+artifacts
+coverage
+junit-report
+mochawesome-report
+node_modules
+.env

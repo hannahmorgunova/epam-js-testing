@@ -1,0 +1,49 @@
+{
+  "name": "js-atm-program",
+  "version": "1.0.0",
+  "description": "Automated Testing Mentoring with JS: Basic",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "api_test": "mocha tests/specs/api/*.spec.js --timeout 40000",
+    "unit_test": "mocha tests/specs/numbersValidator/*.spec.js",
+    "coverage": "c8 npm run unit_test",
+    "lint": "eslint ./ --fix",
+    "mocha_test": "wdio run src/config/mochaWdio.conf.js",
+    "cucumber_test": "wdio run src/config/cucumberWdio.conf.js",
+    "allure": "allure generate allure-results --clean && allure open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.epam.com:hanna_marhunova/js-atm-program.git"
+  },
+  "keywords": [],
+  "author": "Hanna_Marhunova@epam.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/chai": "^4.3.13",
+    "@wdio/allure-reporter": "^8.34.0",
+    "@wdio/cli": "^8.36.1",
+    "@wdio/cucumber-framework": "^8.36.1",
+    "@wdio/globals": "^8.36.1",
+    "@wdio/junit-reporter": "^8.32.4",
+    "@wdio/local-runner": "^8.36.1",
+    "@wdio/mocha-framework": "^8.35.0",
+    "@wdio/spec-reporter": "^8.36.1",
+    "allure-commandline": "^2.28.0",
+    "axios": "^1.6.8",
+    "c8": "^9.1.0",
+    "chai": "^4.3.8",
+    "devtools": "^8.38.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.11",
+    "mocha": "^10.3.0",
+    "mochawesome": "^7.1.3",
+    "webdriver": "^8.38.0",
+    "webdriverio": "^8.36.1"
+  }
+}

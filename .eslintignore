@@ -1,0 +1,7 @@
+node_modules
+coverage
+mochawesome-report
+allure-report
+allure-results
+artifacts
+junit-report

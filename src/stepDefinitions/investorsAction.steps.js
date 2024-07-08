@@ -1,5 +1,5 @@
 const { When } = require('@wdio/cucumber-framework');
-const { page } = require('../po');
+const { page } = require('../pageObject');
 
 When('I open {string} item and {string} sub-item in Top Navigation bar', async function (itemName, subItemName) {
   await page('Main').topNavigation.open(itemName, subItemName);

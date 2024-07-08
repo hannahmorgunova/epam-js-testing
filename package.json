@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "api_test": "mocha tests/specs/api/*.spec.js --timeout 40000",
-    "unit_test": "mocha tests/specs/numbersValidator/*.spec.js",
+    "unit_test": "mocha tests/specs/unit/*.spec.js",
     "coverage": "c8 npm run unit_test",
     "lint": "eslint ./ --fix",
     "mocha_test": "wdio run src/config/mochaWdio.conf.js",

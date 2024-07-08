@@ -1,5 +1,5 @@
 const { When } = require('@wdio/cucumber-framework');
-const { page } = require('../po');
+const { page } = require('../pageObject');
 
 When('I click Hamburger Menu button', async function () {
   await page('Main').hamburgerMenu.button.click();

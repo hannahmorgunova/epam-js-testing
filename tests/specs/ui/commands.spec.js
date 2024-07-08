@@ -1,4 +1,4 @@
-const { page } = require('../../../src/po');
+const { page } = require('../../../src/pageObject');
 
 describe('Test suite for WebdriverIO: Commands', () => {
   beforeEach(async () => {

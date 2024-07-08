@@ -1,4 +1,4 @@
-const { page } = require('../po');
+const { page } = require('../pageObject');
 
 function messageType(type, field) {
   switch (type) {

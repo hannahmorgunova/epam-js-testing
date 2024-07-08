@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.epam.com:hanna_marhunova/js-atm-program.git"
+    "url": "git@gitlab.com:hannamarhunova/js-atm-program.git"
   },
   "keywords": [],
-  "author": "Hanna_Marhunova@epam.com",
+  "author": "hannah.morgunova@gmail.com",
   "license": "UNLICENSED",
   "devDependencies": {
     "@types/chai": "^4.3.13",

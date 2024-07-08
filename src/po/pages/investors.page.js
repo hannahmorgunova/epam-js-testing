@@ -23,4 +23,3 @@ class InvestorsPage extends BasePage {
 }
 
 module.exports = InvestorsPage;
-

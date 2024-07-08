@@ -17,4 +17,3 @@ When('I set random value in {string} input field', async function (field) {
   const inputField = await page('Contact Us').input(field);
   await inputField.setValue(Math.random().toString(36).slice(8));
 });
-
